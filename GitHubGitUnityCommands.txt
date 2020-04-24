@@ -1,0 +1,28 @@
+-- Git hub/git/unity config commands
+
+connect to github from git bash
+-- see if the agent is running
+ eval $(ssh-agent -s)
+-- connect to github
+ssh -T git@github.com
+
+navigate to the folder
+git status
+-- more info found here : https://app.pluralsight.com/course-player?clipId=51c37710-eaa4-41cd-9da3-150d371309c7
+
+
+how to clone a repo in git bash for unity
+go to the folder you want to clone
+get the url for the repo from github
+run 
+git clone git@github.com:zjakub1/Sprite-Test.git
+close unity
+-- ignore clrclf errors
+git config core.autocrlf false
+git add .
+git commit -a -m "comments"
+git push origin master
+
+https://www.youtube.com/watch?v=BlUldSuOgDc
+https://connect.unity.com/p/git-command-line-setup-with-unity-step-by-step-for-beginners
+https://stackoverflow.com/questions/5834014/lf-will-be-replaced-by-crlf-in-git-what-is-that-and-is-it-important
